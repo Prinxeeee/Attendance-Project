@@ -1,26 +1,26 @@
 records = {}
 
-def take_attendance():
+def takeattend():
     while True:
-        print("\n== MARK ATTENDANCE ==")
-        stu = input("Student name (type STOP to go back): ").strip().lower()
+        print("== MARK ATTENDANCE ==")
+        x = input("Student name (type STOP to go back): ").lower()
 
-        if stu == "stop":
+        if x == "stop":
             break
 
-        mark = input("Present or Absent? (p/a): ").strip().lower()
+        y = input("Present or Absent? (p/a): ").lower()
 
-        if mark == "p":
-            records[stu] = "present"
+        if y == "p":
+            records[x] = "present"
         elif mark == "a":
-            records[stu] = "absent"
+            records[y] = "absent"
         else:
-            print("Wrong choice, try again.")
+            print("Wrong choice, try again")
 
-def show_records():
-    print("\n== ATTENDANCE LIST ==")
+def show_rec():
+    print(== ATTENDANCE LIST ==")
     if len(records) == 0:
-        print("No attendance added yet.")
+        print("No attendance added yet")
         return
 
     for i in records:
@@ -28,19 +28,19 @@ def show_records():
 
 def analyse_records():
     print("\n== SUMMARY ==")
-    total = len(records)
+    t = len(records)
 
-    if total == 0:
-        print("No data to analyse.")
+    if t == 0:
+        print("No data to analyse")
         return
 
-    present_count = list(records.values()).count("present")
-    absent_count = total - present_count
-    percentage = (present_count / total) * 100
+    pc = list(records.values()).count("present")
+    ac = t - pc
+    percentage = (pc/t)*100
 
-    print("Total students :", total)
-    print("Present        :", present_count)
-    print("Absent         :", absent_count)
+    print("Total students :", t)
+    print("Present        :", pc)
+    print("Absent         :", ac)
     print("Attendance %   :", round(percentage, 2))
 
 def menu():
@@ -54,14 +54,13 @@ def menu():
         opt = input("Choose between 1-4: ")
 
         if opt == "1":
-            take_attendance()
+            takeattend()
         elif opt == "2":
-            show_records()
+            show_rec()
         elif opt == "3":
             analyse_records()
         elif opt == "4":
             break
         else:
-            print("Invalid option. Try again.")
-
+            print("Invalid option, Try again")
 menu()
