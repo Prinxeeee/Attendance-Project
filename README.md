@@ -58,13 +58,19 @@ The summary option shows:
 
 ## Example output
 
-== LIST OF ATT
+== LIST OF ATTENDANCE ==
+
 rahul --> present
-neha --> absent
+
+neha--> absent
 
 == SUMMARY ==
 Total students : 2
+
 Present : 1
+
 Absent : 1
+
 Attendance % : 50.0
+
 
