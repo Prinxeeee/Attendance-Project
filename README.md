@@ -1,4 +1,4 @@
-Attendance Tracker (Python)
+#Attendance Tracker (Python)
 
 This is a small command-line program that helps record and view student attendance. It lets you mark each student as present or absent, shows the full list, and gives a short summary with totals and percentage.
 
@@ -73,3 +73,4 @@ Total students : 2
 Present        : 1
 Absent         : 1
 Attendance %   : 50.0
+
