@@ -1,5 +1,4 @@
 records = {}
-
 def takeattend():
     while True:
         print("== MARK ATTENDANCE ==")
@@ -12,13 +11,13 @@ def takeattend():
 
         if y == "p":
             records[x] = "present"
-        elif mark == "a":
-            records[y] = "absent"
+        elif y == "a":
+            records[x] = "absent"
         else:
             print("Wrong choice, try again")
 
 def show_rec():
-    print(== ATTENDANCE LIST ==")
+    print("== ATTENDANCE LIST ==")
     if len(records) == 0:
         print("No attendance added yet")
         return
@@ -64,3 +63,4 @@ def menu():
         else:
             print("Invalid option, Try again")
 menu()
+
