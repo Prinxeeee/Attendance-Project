@@ -21,8 +21,6 @@ The data is stored in a dictionary during the course of program execution.
 
 python attendance.py
 
-shell
-
 ## Menu options
 
 Once the program has started, you should see:
@@ -36,8 +34,6 @@ Show all attendance
 Attendance Summary
 
 Quit
-
-markdown
 
 Please choose an option by typing its number.
 
@@ -71,3 +67,4 @@ Total students : 2
 Present : 1
 Absent : 1
 Attendance % : 50.0
+
