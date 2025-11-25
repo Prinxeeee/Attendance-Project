@@ -1,76 +1,73 @@
-#Attendance Tracker (Python)
+# Attendance Tracker in Python
 
-This is a small command-line program that helps record and view student attendance. It lets you mark each student as present or absent, shows the full list, and gives a short summary with totals and percentage.
+This is a small command-line program that helps in recording and viewing the attendance of students. It will be able to mark each student as present or absent, view the full list, and give a short summary displaying totals and a percentage.
 
-How it works
+## How it works
 
 The program runs in a simple menu format. You can:
 
-Add attendance for any number of students
+- Add attendance for any number of students  
+- View all the records you added  
+- Get a summary showing present count, absent count, and overall attendance percentage  
 
-View all the records you added
+The data is stored in a dictionary during the course of program execution.
 
-Get a summary showing present count, absent count, and overall attendance percentage
+## How to run
 
-The data is stored in a dictionary while the program is running.
-
-How to run
-
-Install Python on your system.
-
-Save the script in a file
-
-Open your terminal or command prompt.
-
-Run it using:
+- Install Python on your system.  
+- Save the script in a file  
+- Open your terminal or command prompt.  
+- Run it using:
 
 python attendance.py
 
-Menu options
+shell
 
-When the program starts, you will see:
+## Menu options
+
+Once the program has started, you should see:
 
 == MENU ==
-1. Add attendance
-2. Show all attendance
-3. Attendance summary
-4. Quit
 
+Add attendance
 
-Choose an option by typing the number.
+Show all attendance
 
-Adding attendance
+Attendance Summary
 
-Enter a student’s name
+Quit
 
-Type p for present or a for absent
+markdown
 
-Type STOP when you want to return to the main menu
+Please choose an option by typing its number.
 
-Viewing records
+## Attendance inclusion
 
-The “Show all attendance” option displays each student along with their status.
+- Enter a student’s name  
+- Type `p` for present or `a` for absent  
+- Type `STOP` when you want to return to the main menu  
 
-Summary
+## Viewing records
+
+The “Show all attendance” option lists each student and their status.
+
+## Summary
 
 The summary option shows:
 
-Total students
+- Total students  
+- How many are present  
+- How many are absent  
+- Attendance percentage  
 
-How many are present
+## Example output
 
-How many are absent
-
-Attendance percentage
-
-Example output
-== ATTENDANCE LIST ==
+== LIST OF ATT
 rahul --> present
 neha --> absent
 
 == SUMMARY ==
 Total students : 2
-Present        : 1
-Absent         : 1
-Attendance %   : 50.0
-
+Present : 1
+Absent : 1
+Attendance % : 50.0
